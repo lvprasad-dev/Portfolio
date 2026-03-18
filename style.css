@@ -1,0 +1,388 @@
+/* ================= RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body {
+  background: linear-gradient(135deg,#2b0033,#4a001a,#1a001a);
+  color: white;
+
+  min-height: 100vh;
+  padding-top: 90px;
+
+  scroll-behavior: smooth;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+  background: rgba(60,0,0,0.95);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 50px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: 9999;
+}
+
+/* Left */
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-logo {
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 2px solid gold;
+}
+
+.nav-text h2 {
+  color: gold;
+  font-size: 20px;
+}
+
+.nav-text span {
+  font-size: 13px;
+  color: silver;
+}
+
+/* Menu */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: silver;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: gold;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  min-height: 90vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 60px;
+}
+
+.hero-left {
+  max-width: 600px;
+}
+
+.hero-left h3 {
+  opacity: 0.8;
+}
+
+.hero-left h1 {
+  font-size: 55px;
+  margin: 10px 0;
+}
+
+.hero-left h1 span {
+  color: #4ef5d3;
+}
+
+.hero-left p {
+  opacity: 0.9;
+  margin: 15px 0 25px;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 25px;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn.yellow {
+  background: gold;
+  color: black;
+}
+
+.btn.yellow:hover {
+  background: orange;
+}
+
+.btn.outline {
+  border: 2px solid #4ef5d3;
+  color: #4ef5d3;
+}
+
+.btn.outline:hover {
+  background: #4ef5d3;
+  color: black;
+}
+
+/* Hero Image */
+
+.hero-right img {
+  width: 420px;
+  border-radius: 20px;
+
+  box-shadow: 0 0 25px rgba(0,255,255,0.4);
+
+  animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+  100%{transform:translateY(0);}
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  color: gold;
+  margin-bottom: 30px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.about-left {
+  text-align: left;
+}
+
+.info-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.info-box div {
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.about-right img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* ================= RESUME ================= */
+
+.resume-grid {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}
+
+.resume-card {
+  background: rgba(255,255,255,0.08);
+
+  padding: 25px;
+  border-radius: 15px;
+
+  text-align: left;
+
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+
+  transition: 0.3s;
+}
+
+.resume-card:hover {
+  transform: translateY(-8px);
+}
+
+.resume-download {
+  margin-top: 40px;
+}
+
+/* ================= SKILLS ================= */
+
+.skills-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+
+.skills-box {
+  background: rgba(255,255,255,0.08);
+
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+
+  background: rgba(255,255,255,0.2);
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: gold;
+}
+
+/* ================= PROJECTS ================= */
+
+.projects-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255,255,255,0.08);
+
+  padding: 20px;
+  border-radius: 18px;
+
+  transition: 0.4s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+
+  object-fit: cover;
+  border-radius: 12px;
+
+  margin-bottom: 15px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-container {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 25px;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.08);
+
+  padding: 30px;
+  border-radius: 18px;
+
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+}
+
+.contact-card i {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: rgba(0,0,0,0.5);
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-container,
+  .resume-grid,
+  .skills-container,
+  .projects-container,
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+

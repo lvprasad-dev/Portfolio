@@ -1,6 +1,6 @@
-# Leela Venkata Prasad — Portfolio
+# N Leela Venkata Prasad — Portfolio
 
-A fast, responsive portfolio centered on verified product work by [Leela Venkata Prasad](https://github.com/lvprasad-dev), a full-stack developer in Hyderabad, India.
+A fast, responsive portfolio centered on verified product work by [N Leela Venkata Prasad](https://github.com/lvprasad-dev), a full-stack developer in Vijayawada, India.
 
 ## Featured work
 
